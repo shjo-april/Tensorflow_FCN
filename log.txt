@@ -1,0 +1,14 @@
+[i] Train : 9006
+[i] Valid : 333
+[i] Test : 210
+[i] restored imagenet parameters (VGG16)
+
+[i] epoch : 1, loss : 3.5970, class_loss = 2.0267, l2_reg_loss : 1.5703, time : 3634sec
+
+[i] epoch : 2, loss : 2.8605, class_loss = 1.2975, l2_reg_loss : 1.5629, time : 3460sec
+
+[i] epoch : 3, loss : 2.7480, class_loss = 1.1930, l2_reg_loss : 1.5550, time : 3461sec
+
+[i] epoch : 4, loss : 2.7100, class_loss = 1.1633, l2_reg_loss : 1.5467, time : 3457sec
+
+[i] epoch : 5, loss : 2.6860, class_loss = 1.1477, l2_reg_loss : 1.5383, time : 3457sec
