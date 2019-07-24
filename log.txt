@@ -1,14 +1,222 @@
-[i] Train : 9006
+[i] Train : 3002
 [i] Valid : 333
 [i] Test : 210
 [i] restored imagenet parameters (VGG16)
-
-[i] epoch : 1, loss : 3.5970, class_loss = 2.0267, l2_reg_loss : 1.5703, time : 3634sec
-
-[i] epoch : 2, loss : 2.8605, class_loss = 1.2975, l2_reg_loss : 1.5629, time : 3460sec
-
-[i] epoch : 3, loss : 2.7480, class_loss = 1.1930, l2_reg_loss : 1.5550, time : 3461sec
-
-[i] epoch : 4, loss : 2.7100, class_loss = 1.1633, l2_reg_loss : 1.5467, time : 3457sec
-
-[i] epoch : 5, loss : 2.6860, class_loss = 1.1477, l2_reg_loss : 1.5383, time : 3457sec
+[i] iter : 100, loss : 3.0121, class_loss = 2.5879, l2_reg_loss : 0.4243, time : 164sec
+[i] iter : 200, loss : 2.6164, class_loss = 2.2976, l2_reg_loss : 0.3188, time : 160sec
+[i] iter : 300, loss : 2.3904, class_loss = 2.1068, l2_reg_loss : 0.2836, time : 162sec
+[i] iter : 400, loss : 2.2072, class_loss = 1.9564, l2_reg_loss : 0.2507, time : 160sec
+[i] iter : 500, loss : 2.0330, class_loss = 1.8118, l2_reg_loss : 0.2212, time : 162sec
+[i] iter : 600, loss : 1.9044, class_loss = 1.7033, l2_reg_loss : 0.2011, time : 161sec
+[i] iter : 700, loss : 1.7928, class_loss = 1.6080, l2_reg_loss : 0.1848, time : 162sec
+[i] iter : 800, loss : 1.6850, class_loss = 1.5144, l2_reg_loss : 0.1706, time : 161sec
+[i] iter : 900, loss : 1.6029, class_loss = 1.4430, l2_reg_loss : 0.1599, time : 161sec
+[i] iter : 1000, loss : 1.5166, class_loss = 1.3656, l2_reg_loss : 0.1511, time : 161sec
+[i] valid meanIU : 2.13%, best valid meanIU : 2.13%
+[i] iter : 1100, loss : 1.4435, class_loss = 1.2988, l2_reg_loss : 0.1447, time : 183sec
+[i] iter : 1200, loss : 1.3831, class_loss = 1.2419, l2_reg_loss : 0.1411, time : 162sec
+[i] iter : 1300, loss : 1.3298, class_loss = 1.1910, l2_reg_loss : 0.1389, time : 162sec
+[i] iter : 1400, loss : 1.2870, class_loss = 1.1529, l2_reg_loss : 0.1341, time : 162sec
+[i] iter : 1500, loss : 1.2586, class_loss = 1.1246, l2_reg_loss : 0.1340, time : 162sec
+[i] iter : 1600, loss : 1.2077, class_loss = 1.0757, l2_reg_loss : 0.1319, time : 160sec
+[i] iter : 1700, loss : 1.1831, class_loss = 1.0525, l2_reg_loss : 0.1306, time : 160sec
+[i] iter : 1800, loss : 1.1544, class_loss = 1.0239, l2_reg_loss : 0.1305, time : 160sec
+[i] iter : 1900, loss : 1.1253, class_loss = 0.9948, l2_reg_loss : 0.1304, time : 160sec
+[i] iter : 2000, loss : 1.1033, class_loss = 0.9730, l2_reg_loss : 0.1303, time : 161sec
+[i] valid meanIU : 3.62%, best valid meanIU : 3.62%
+[i] iter : 2100, loss : 1.0724, class_loss = 0.9423, l2_reg_loss : 0.1301, time : 179sec
+[i] iter : 2200, loss : 1.0505, class_loss = 0.9205, l2_reg_loss : 0.1300, time : 161sec
+[i] iter : 2300, loss : 1.0648, class_loss = 0.9347, l2_reg_loss : 0.1301, time : 161sec
+[i] iter : 2400, loss : 1.0422, class_loss = 0.9118, l2_reg_loss : 0.1304, time : 162sec
+[i] iter : 2500, loss : 1.0244, class_loss = 0.8933, l2_reg_loss : 0.1312, time : 161sec
+[i] iter : 2600, loss : 1.0196, class_loss = 0.8883, l2_reg_loss : 0.1313, time : 162sec
+[i] iter : 2700, loss : 0.9837, class_loss = 0.8506, l2_reg_loss : 0.1330, time : 160sec
+[i] iter : 2800, loss : 0.9792, class_loss = 0.8452, l2_reg_loss : 0.1340, time : 160sec
+[i] iter : 2900, loss : 0.9743, class_loss = 0.8384, l2_reg_loss : 0.1359, time : 161sec
+[i] iter : 3000, loss : 0.9539, class_loss = 0.8159, l2_reg_loss : 0.1380, time : 161sec
+[i] valid meanIU : 3.65%, best valid meanIU : 3.65%
+[i] iter : 3100, loss : 0.9754, class_loss = 0.8352, l2_reg_loss : 0.1402, time : 182sec
+[i] iter : 3200, loss : 0.9470, class_loss = 0.8025, l2_reg_loss : 0.1444, time : 160sec
+[i] iter : 3300, loss : 0.9398, class_loss = 0.7935, l2_reg_loss : 0.1463, time : 161sec
+[i] iter : 3400, loss : 0.9206, class_loss = 0.7729, l2_reg_loss : 0.1477, time : 161sec
+[i] iter : 3500, loss : 0.9074, class_loss = 0.7582, l2_reg_loss : 0.1492, time : 159sec
+[i] iter : 3600, loss : 0.8939, class_loss = 0.7422, l2_reg_loss : 0.1516, time : 158sec
+[i] iter : 3700, loss : 0.9008, class_loss = 0.7475, l2_reg_loss : 0.1533, time : 160sec
+[i] iter : 3800, loss : 0.9069, class_loss = 0.7497, l2_reg_loss : 0.1571, time : 161sec
+[i] iter : 3900, loss : 0.8986, class_loss = 0.7393, l2_reg_loss : 0.1593, time : 161sec
+[i] iter : 4000, loss : 0.8801, class_loss = 0.7189, l2_reg_loss : 0.1613, time : 159sec
+[i] valid meanIU : 3.97%, best valid meanIU : 3.97%
+[i] iter : 4100, loss : 0.8901, class_loss = 0.7280, l2_reg_loss : 0.1621, time : 179sec
+[i] iter : 4200, loss : 0.8800, class_loss = 0.7145, l2_reg_loss : 0.1655, time : 160sec
+[i] iter : 4300, loss : 0.8938, class_loss = 0.7262, l2_reg_loss : 0.1676, time : 161sec
+[i] iter : 4400, loss : 0.8784, class_loss = 0.7081, l2_reg_loss : 0.1703, time : 159sec
+[i] iter : 4500, loss : 0.8661, class_loss = 0.6918, l2_reg_loss : 0.1743, time : 161sec
+[i] iter : 4600, loss : 0.8772, class_loss = 0.6995, l2_reg_loss : 0.1777, time : 161sec
+[i] iter : 4700, loss : 0.8539, class_loss = 0.6751, l2_reg_loss : 0.1788, time : 160sec
+[i] iter : 4800, loss : 0.8488, class_loss = 0.6685, l2_reg_loss : 0.1802, time : 160sec
+[i] iter : 4900, loss : 0.8454, class_loss = 0.6625, l2_reg_loss : 0.1829, time : 160sec
+[i] iter : 5000, loss : 0.8600, class_loss = 0.6731, l2_reg_loss : 0.1869, time : 160sec
+[i] valid meanIU : 3.91%, best valid meanIU : 3.97%
+[i] iter : 5100, loss : 0.8643, class_loss = 0.6738, l2_reg_loss : 0.1905, time : 179sec
+[i] iter : 5200, loss : 0.8423, class_loss = 0.6492, l2_reg_loss : 0.1930, time : 162sec
+[i] iter : 5300, loss : 0.8455, class_loss = 0.6505, l2_reg_loss : 0.1950, time : 161sec
+[i] iter : 5400, loss : 0.8372, class_loss = 0.6386, l2_reg_loss : 0.1986, time : 159sec
+[i] iter : 5500, loss : 0.8435, class_loss = 0.6411, l2_reg_loss : 0.2024, time : 161sec
+[i] iter : 5600, loss : 0.8303, class_loss = 0.6228, l2_reg_loss : 0.2075, time : 160sec
+[i] iter : 5700, loss : 0.8375, class_loss = 0.6260, l2_reg_loss : 0.2116, time : 161sec
+[i] iter : 5800, loss : 0.8445, class_loss = 0.6279, l2_reg_loss : 0.2166, time : 161sec
+[i] iter : 5900, loss : 0.8467, class_loss = 0.6283, l2_reg_loss : 0.2184, time : 161sec
+[i] iter : 6000, loss : 0.8397, class_loss = 0.6162, l2_reg_loss : 0.2235, time : 160sec
+[i] valid meanIU : 4.19%, best valid meanIU : 4.19%
+[i] iter : 6100, loss : 0.8475, class_loss = 0.6210, l2_reg_loss : 0.2265, time : 179sec
+[i] iter : 6200, loss : 0.8374, class_loss = 0.6066, l2_reg_loss : 0.2307, time : 160sec
+[i] iter : 6300, loss : 0.8210, class_loss = 0.5896, l2_reg_loss : 0.2315, time : 160sec
+[i] iter : 6400, loss : 0.8269, class_loss = 0.5921, l2_reg_loss : 0.2349, time : 162sec
+[i] iter : 6500, loss : 0.8345, class_loss = 0.5959, l2_reg_loss : 0.2386, time : 162sec
+[i] iter : 6600, loss : 0.8289, class_loss = 0.5850, l2_reg_loss : 0.2439, time : 162sec
+[i] iter : 6700, loss : 0.8335, class_loss = 0.5859, l2_reg_loss : 0.2476, time : 162sec
+[i] iter : 6800, loss : 0.8318, class_loss = 0.5798, l2_reg_loss : 0.2519, time : 161sec
+[i] iter : 6900, loss : 0.8289, class_loss = 0.5713, l2_reg_loss : 0.2577, time : 160sec
+[i] iter : 7000, loss : 0.8429, class_loss = 0.5801, l2_reg_loss : 0.2629, time : 162sec
+[i] valid meanIU : 4.14%, best valid meanIU : 4.19%
+[i] iter : 7100, loss : 0.8215, class_loss = 0.5558, l2_reg_loss : 0.2657, time : 177sec
+[i] iter : 7200, loss : 0.8275, class_loss = 0.5599, l2_reg_loss : 0.2675, time : 159sec
+[i] iter : 7300, loss : 0.8357, class_loss = 0.5640, l2_reg_loss : 0.2717, time : 161sec
+[i] iter : 7400, loss : 0.8128, class_loss = 0.5355, l2_reg_loss : 0.2774, time : 159sec
+[i] iter : 7500, loss : 0.8459, class_loss = 0.5650, l2_reg_loss : 0.2809, time : 160sec
+[i] iter : 7600, loss : 0.8282, class_loss = 0.5435, l2_reg_loss : 0.2847, time : 161sec
+[i] iter : 7700, loss : 0.8238, class_loss = 0.5351, l2_reg_loss : 0.2887, time : 162sec
+[i] iter : 7800, loss : 0.8134, class_loss = 0.5211, l2_reg_loss : 0.2922, time : 162sec
+[i] iter : 7900, loss : 0.8299, class_loss = 0.5338, l2_reg_loss : 0.2960, time : 162sec
+[i] iter : 8000, loss : 0.8364, class_loss = 0.5345, l2_reg_loss : 0.3019, time : 160sec
+[i] valid meanIU : 4.09%, best valid meanIU : 4.19%
+[i] iter : 8100, loss : 0.8214, class_loss = 0.5150, l2_reg_loss : 0.3064, time : 177sec
+[i] iter : 8200, loss : 0.8027, class_loss = 0.4923, l2_reg_loss : 0.3104, time : 158sec
+[i] iter : 8300, loss : 0.8252, class_loss = 0.5093, l2_reg_loss : 0.3159, time : 160sec
+[i] iter : 8400, loss : 0.8184, class_loss = 0.4956, l2_reg_loss : 0.3228, time : 160sec
+[i] iter : 8500, loss : 0.8268, class_loss = 0.5004, l2_reg_loss : 0.3264, time : 161sec
+[i] iter : 8600, loss : 0.8270, class_loss = 0.4961, l2_reg_loss : 0.3309, time : 161sec
+[i] iter : 8700, loss : 0.8227, class_loss = 0.4895, l2_reg_loss : 0.3332, time : 161sec
+[i] iter : 8800, loss : 0.8331, class_loss = 0.4944, l2_reg_loss : 0.3387, time : 161sec
+[i] iter : 8900, loss : 0.8274, class_loss = 0.4830, l2_reg_loss : 0.3444, time : 161sec
+[i] iter : 9000, loss : 0.8482, class_loss = 0.4959, l2_reg_loss : 0.3523, time : 161sec
+[i] valid meanIU : 4.35%, best valid meanIU : 4.35%
+[i] iter : 9100, loss : 0.8460, class_loss = 0.4897, l2_reg_loss : 0.3563, time : 180sec
+[i] iter : 9200, loss : 0.8247, class_loss = 0.4635, l2_reg_loss : 0.3612, time : 160sec
+[i] iter : 9300, loss : 0.8344, class_loss = 0.4680, l2_reg_loss : 0.3663, time : 161sec
+[i] iter : 9400, loss : 0.8262, class_loss = 0.4569, l2_reg_loss : 0.3693, time : 160sec
+[i] iter : 9500, loss : 0.8424, class_loss = 0.4666, l2_reg_loss : 0.3757, time : 160sec
+[i] iter : 9600, loss : 0.8409, class_loss = 0.4589, l2_reg_loss : 0.3820, time : 161sec
+[i] iter : 9700, loss : 0.8489, class_loss = 0.4615, l2_reg_loss : 0.3874, time : 160sec
+[i] iter : 9800, loss : 0.8572, class_loss = 0.4658, l2_reg_loss : 0.3914, time : 160sec
+[i] iter : 9900, loss : 0.8503, class_loss = 0.4554, l2_reg_loss : 0.3949, time : 162sec
+[i] iter : 10000, loss : 0.8448, class_loss = 0.4455, l2_reg_loss : 0.3993, time : 159sec
+[i] valid meanIU : 4.31%, best valid meanIU : 4.35%
+[i] iter : 10100, loss : 0.8712, class_loss = 0.4666, l2_reg_loss : 0.4045, time : 178sec
+[i] iter : 10200, loss : 0.8505, class_loss = 0.4392, l2_reg_loss : 0.4113, time : 161sec
+[i] iter : 10300, loss : 0.8346, class_loss = 0.4193, l2_reg_loss : 0.4154, time : 160sec
+[i] iter : 10400, loss : 0.8469, class_loss = 0.4274, l2_reg_loss : 0.4195, time : 161sec
+[i] iter : 10500, loss : 0.8436, class_loss = 0.4193, l2_reg_loss : 0.4243, time : 160sec
+[i] iter : 10600, loss : 0.8417, class_loss = 0.4117, l2_reg_loss : 0.4300, time : 158sec
+[i] iter : 10700, loss : 0.8450, class_loss = 0.4096, l2_reg_loss : 0.4353, time : 161sec
+[i] iter : 10800, loss : 0.8533, class_loss = 0.4131, l2_reg_loss : 0.4402, time : 159sec
+[i] iter : 10900, loss : 0.8652, class_loss = 0.4178, l2_reg_loss : 0.4475, time : 161sec
+[i] iter : 11000, loss : 0.8656, class_loss = 0.4124, l2_reg_loss : 0.4532, time : 160sec
+[i] valid meanIU : 4.45%, best valid meanIU : 4.45%
+[i] iter : 11100, loss : 0.8734, class_loss = 0.4135, l2_reg_loss : 0.4598, time : 180sec
+[i] iter : 11200, loss : 0.8967, class_loss = 0.4306, l2_reg_loss : 0.4661, time : 161sec
+[i] iter : 11300, loss : 0.8816, class_loss = 0.4113, l2_reg_loss : 0.4703, time : 161sec
+[i] iter : 11400, loss : 0.8800, class_loss = 0.4056, l2_reg_loss : 0.4743, time : 160sec
+[i] iter : 11500, loss : 0.8811, class_loss = 0.4018, l2_reg_loss : 0.4793, time : 161sec
+[i] iter : 11600, loss : 0.8708, class_loss = 0.3869, l2_reg_loss : 0.4839, time : 159sec
+[i] iter : 11700, loss : 0.8984, class_loss = 0.4094, l2_reg_loss : 0.4890, time : 162sec
+[i] iter : 11800, loss : 0.9248, class_loss = 0.4261, l2_reg_loss : 0.4986, time : 161sec
+[i] iter : 11900, loss : 0.8987, class_loss = 0.3928, l2_reg_loss : 0.5059, time : 161sec
+[i] iter : 12000, loss : 0.8992, class_loss = 0.3896, l2_reg_loss : 0.5096, time : 161sec
+[i] valid meanIU : 4.41%, best valid meanIU : 4.45%
+[i] iter : 12100, loss : 0.8966, class_loss = 0.3816, l2_reg_loss : 0.5150, time : 177sec
+[i] iter : 12200, loss : 0.8999, class_loss = 0.3803, l2_reg_loss : 0.5195, time : 161sec
+[i] iter : 12300, loss : 0.9012, class_loss = 0.3763, l2_reg_loss : 0.5250, time : 160sec
+[i] iter : 12400, loss : 0.9150, class_loss = 0.3836, l2_reg_loss : 0.5313, time : 161sec
+[i] iter : 12500, loss : 0.9305, class_loss = 0.3898, l2_reg_loss : 0.5407, time : 161sec
+[i] iter : 12600, loss : 0.9096, class_loss = 0.3633, l2_reg_loss : 0.5464, time : 160sec
+[i] iter : 12700, loss : 0.9574, class_loss = 0.4045, l2_reg_loss : 0.5529, time : 160sec
+[i] iter : 12800, loss : 0.9490, class_loss = 0.3893, l2_reg_loss : 0.5597, time : 161sec
+[i] iter : 12900, loss : 0.9399, class_loss = 0.3742, l2_reg_loss : 0.5657, time : 160sec
+[i] iter : 13000, loss : 0.9368, class_loss = 0.3665, l2_reg_loss : 0.5703, time : 159sec
+[i] valid meanIU : 4.49%, best valid meanIU : 4.49%
+[i] iter : 13100, loss : 0.9655, class_loss = 0.3900, l2_reg_loss : 0.5754, time : 180sec
+[i] iter : 13200, loss : 0.9730, class_loss = 0.3868, l2_reg_loss : 0.5862, time : 161sec
+[i] iter : 13300, loss : 0.9524, class_loss = 0.3597, l2_reg_loss : 0.5927, time : 160sec
+[i] iter : 13400, loss : 0.9618, class_loss = 0.3636, l2_reg_loss : 0.5982, time : 161sec
+[i] iter : 13500, loss : 0.9733, class_loss = 0.3689, l2_reg_loss : 0.6043, time : 161sec
+[i] iter : 13600, loss : 0.9672, class_loss = 0.3585, l2_reg_loss : 0.6087, time : 160sec
+[i] iter : 13700, loss : 0.9715, class_loss = 0.3567, l2_reg_loss : 0.6148, time : 160sec
+[i] iter : 13800, loss : 0.9750, class_loss = 0.3546, l2_reg_loss : 0.6204, time : 159sec
+[i] iter : 13900, loss : 0.9860, class_loss = 0.3574, l2_reg_loss : 0.6285, time : 162sec
+[i] iter : 14000, loss : 0.9707, class_loss = 0.3357, l2_reg_loss : 0.6350, time : 160sec
+[i] valid meanIU : 4.54%, best valid meanIU : 4.54%
+[i] iter : 14100, loss : 0.9817, class_loss = 0.3403, l2_reg_loss : 0.6414, time : 179sec
+[i] iter : 14200, loss : 1.0153, class_loss = 0.3668, l2_reg_loss : 0.6485, time : 161sec
+[i] iter : 14300, loss : 1.0227, class_loss = 0.3644, l2_reg_loss : 0.6583, time : 160sec
+[i] iter : 14400, loss : 1.0181, class_loss = 0.3531, l2_reg_loss : 0.6649, time : 159sec
+[i] iter : 14500, loss : 1.0244, class_loss = 0.3538, l2_reg_loss : 0.6706, time : 160sec
+[i] iter : 14600, loss : 1.0288, class_loss = 0.3528, l2_reg_loss : 0.6760, time : 159sec
+[i] iter : 14700, loss : 1.0344, class_loss = 0.3520, l2_reg_loss : 0.6824, time : 162sec
+[i] iter : 14800, loss : 1.0262, class_loss = 0.3378, l2_reg_loss : 0.6884, time : 161sec
+[i] iter : 14900, loss : 1.0371, class_loss = 0.3417, l2_reg_loss : 0.6955, time : 160sec
+[i] iter : 15000, loss : 1.0555, class_loss = 0.3525, l2_reg_loss : 0.7030, time : 161sec
+[i] valid meanIU : 4.55%, best valid meanIU : 4.55%
+[i] iter : 15100, loss : 1.0447, class_loss = 0.3353, l2_reg_loss : 0.7094, time : 181sec
+[i] iter : 15200, loss : 1.0629, class_loss = 0.3469, l2_reg_loss : 0.7160, time : 161sec
+[i] iter : 15300, loss : 1.0667, class_loss = 0.3425, l2_reg_loss : 0.7243, time : 161sec
+[i] iter : 15400, loss : 1.0605, class_loss = 0.3294, l2_reg_loss : 0.7310, time : 162sec
+[i] iter : 15500, loss : 1.0626, class_loss = 0.3251, l2_reg_loss : 0.7374, time : 160sec
+[i] iter : 15600, loss : 1.0770, class_loss = 0.3335, l2_reg_loss : 0.7435, time : 160sec
+[i] iter : 15700, loss : 1.0860, class_loss = 0.3337, l2_reg_loss : 0.7523, time : 161sec
+[i] iter : 15800, loss : 1.0951, class_loss = 0.3344, l2_reg_loss : 0.7607, time : 160sec
+[i] iter : 15900, loss : 1.0939, class_loss = 0.3272, l2_reg_loss : 0.7668, time : 160sec
+[i] iter : 16000, loss : 1.1025, class_loss = 0.3280, l2_reg_loss : 0.7745, time : 161sec
+[i] valid meanIU : 4.62%, best valid meanIU : 4.62%
+[i] iter : 16100, loss : 1.1055, class_loss = 0.3231, l2_reg_loss : 0.7824, time : 180sec
+[i] iter : 16200, loss : 1.1095, class_loss = 0.3190, l2_reg_loss : 0.7905, time : 160sec
+[i] iter : 16300, loss : 1.1189, class_loss = 0.3219, l2_reg_loss : 0.7970, time : 160sec
+[i] iter : 16400, loss : 1.1354, class_loss = 0.3302, l2_reg_loss : 0.8051, time : 162sec
+[i] iter : 16500, loss : 1.1345, class_loss = 0.3221, l2_reg_loss : 0.8124, time : 160sec
+[i] iter : 16600, loss : 1.1475, class_loss = 0.3286, l2_reg_loss : 0.8188, time : 161sec
+[i] iter : 16700, loss : 1.1436, class_loss = 0.3185, l2_reg_loss : 0.8251, time : 160sec
+[i] iter : 16800, loss : 1.1538, class_loss = 0.3228, l2_reg_loss : 0.8311, time : 161sec
+[i] iter : 16900, loss : 1.1579, class_loss = 0.3175, l2_reg_loss : 0.8404, time : 161sec
+[i] iter : 17000, loss : 1.1965, class_loss = 0.3452, l2_reg_loss : 0.8513, time : 162sec
+[i] valid meanIU : 4.35%, best valid meanIU : 4.62%
+[i] iter : 17100, loss : 1.1961, class_loss = 0.3348, l2_reg_loss : 0.8613, time : 177sec
+[i] iter : 17200, loss : 1.1738, class_loss = 0.3053, l2_reg_loss : 0.8685, time : 160sec
+[i] iter : 17300, loss : 1.1941, class_loss = 0.3207, l2_reg_loss : 0.8734, time : 160sec
+[i] iter : 17400, loss : 1.1876, class_loss = 0.3077, l2_reg_loss : 0.8799, time : 161sec
+[i] iter : 17500, loss : 1.1857, class_loss = 0.2999, l2_reg_loss : 0.8857, time : 161sec
+[i] iter : 17600, loss : 1.1938, class_loss = 0.3014, l2_reg_loss : 0.8923, time : 161sec
+[i] iter : 17700, loss : 1.1992, class_loss = 0.2989, l2_reg_loss : 0.9003, time : 160sec
+[i] iter : 17800, loss : 1.2137, class_loss = 0.3053, l2_reg_loss : 0.9084, time : 161sec
+[i] iter : 17900, loss : 1.2111, class_loss = 0.2946, l2_reg_loss : 0.9166, time : 162sec
+[i] iter : 18000, loss : 1.2604, class_loss = 0.3356, l2_reg_loss : 0.9248, time : 161sec
+[i] valid meanIU : 4.25%, best valid meanIU : 4.62%
+[i] iter : 18100, loss : 1.2588, class_loss = 0.3214, l2_reg_loss : 0.9374, time : 179sec
+[i] iter : 18200, loss : 1.2456, class_loss = 0.3044, l2_reg_loss : 0.9412, time : 159sec
+[i] iter : 18300, loss : 1.2418, class_loss = 0.2937, l2_reg_loss : 0.9482, time : 160sec
+[i] iter : 18400, loss : 1.2547, class_loss = 0.3000, l2_reg_loss : 0.9548, time : 161sec
+[i] iter : 18500, loss : 1.2657, class_loss = 0.3028, l2_reg_loss : 0.9629, time : 160sec
+[i] iter : 18600, loss : 1.2837, class_loss = 0.3089, l2_reg_loss : 0.9748, time : 161sec
+[i] iter : 18700, loss : 1.2721, class_loss = 0.2922, l2_reg_loss : 0.9799, time : 161sec
+[i] iter : 18800, loss : 1.2742, class_loss = 0.2879, l2_reg_loss : 0.9863, time : 160sec
+[i] iter : 18900, loss : 1.3008, class_loss = 0.3065, l2_reg_loss : 0.9944, time : 161sec
+[i] iter : 19000, loss : 1.3030, class_loss = 0.3008, l2_reg_loss : 1.0022, time : 161sec
+[i] valid meanIU : 4.67%, best valid meanIU : 4.67%
+[i] iter : 19100, loss : 1.2924, class_loss = 0.2823, l2_reg_loss : 1.0101, time : 179sec
+[i] iter : 19200, loss : 1.3111, class_loss = 0.2942, l2_reg_loss : 1.0169, time : 161sec
+[i] iter : 19300, loss : 1.3270, class_loss = 0.3013, l2_reg_loss : 1.0257, time : 161sec
+[i] iter : 19400, loss : 1.3287, class_loss = 0.2943, l2_reg_loss : 1.0343, time : 163sec
+[i] iter : 19500, loss : 1.3494, class_loss = 0.3067, l2_reg_loss : 1.0427, time : 162sec
+[i] iter : 19600, loss : 1.3577, class_loss = 0.3067, l2_reg_loss : 1.0510, time : 161sec
+[i] iter : 19700, loss : 1.3339, class_loss = 0.2761, l2_reg_loss : 1.0579, time : 160sec
+[i] iter : 19800, loss : 1.3442, class_loss = 0.2799, l2_reg_loss : 1.0643, time : 161sec
+[i] iter : 19900, loss : 1.3456, class_loss = 0.2742, l2_reg_loss : 1.0714, time : 159sec

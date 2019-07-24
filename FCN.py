@@ -17,15 +17,18 @@ def FCN_UNet(input_var, is_training):
     with tf.contrib.slim.arg_scope(vgg.vgg_arg_scope()):
         feature_maps = vgg.vgg_16(x, num_classes=1000, is_training=is_training, dropout_keep_prob=0.5)
     
-    x = feature_maps[4]
-    for i in range(len(feature_maps) - 1):
-        prior_feature_map = feature_maps[3 - i]
+    # resolution 224x224 -> feature_maps[4], feature_maps[3 - i]
+    # resolution 112x112 -> feature_maps[3], feature_maps[2 - i]
+    x = feature_maps[3]
+    for i in range(len(feature_maps) - 2):
+        prior_feature_map = feature_maps[2 - i]
         shape = prior_feature_map.get_shape().as_list()
 
         x = tf.layers.conv2d_transpose(inputs = x, filters = shape[-1], kernel_size = [3, 3], strides = 2, padding = 'SAME', kernel_initializer = init_fn, name = 'up_conv2d_{}'.format(i))
         x = tf.layers.batch_normalization(inputs = x, training = is_training, name = 'up_bn_{}'.format(i))
         x = tf.nn.relu(x, name = 'up_relu_{}'.format(i))
 
+        #print(x, prior_feature_map); input()
         x = tf.concat((x, prior_feature_map), axis = -1)
         
         x = tf.layers.conv2d(inputs = x, filters = shape[-1], kernel_size = [3, 3], strides = 1, padding = 'SAME', kernel_initializer = init_fn, name = 'conv_{}'.format(i))
@@ -41,10 +44,10 @@ def FCN_UNet(input_var, is_training):
     x = tf.layers.conv2d(inputs = x, filters = CLASSES, kernel_size = [1, 1], strides = 1, padding = 'SAME', kernel_initializer = init_fn, name = 'conv2d')
     x = tf.layers.batch_normalization(inputs = x, training = is_training, name = 'bn')
 
-    # predictions = tf.nn.softmax(x, axis = -1, name = 'predictions')
-    predictions = x
+    logits = x
+    predictions = tf.nn.softmax(x, axis = -1, name = 'predictions')
 
-    return predictions
+    return logits, predictions
 
 def FCN(x, is_training, dropout_rate = 0.25):
     x -= VGG_MEAN
