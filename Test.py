@@ -16,46 +16,39 @@ from Segmentation_Utils import *
 
 os.environ["CUDA_VISIBLE_DEVICES"]="0"
 
-# 1. dataset
-TRAIN_PNG_DIRS = ["D:/DB/VOC2007/train/png/", "D:/DB/VOC2012/png/"]
-TEST_PNG_DIRS = ["D:/DB/VOC2007/test/png/"]
-
-train_png_paths = []
-test_png_paths = []
-
-for train_png_dir in TRAIN_PNG_DIRS:
-    train_png_paths += glob.glob(train_png_dir + "*")
-
-for test_png_dir in TEST_PNG_DIRS:
-    test_png_paths += glob.glob(test_png_dir + "*")
-
-np.random.shuffle(train_png_paths)
-train_png_paths = np.asarray(train_png_paths)
-
-valid_png_paths = train_png_paths[:int(len(train_png_paths) * 0.1)]
-train_png_paths = train_png_paths[int(len(train_png_paths) * 0.1):]
-
-# 2. build
+# 1. build
 color_dic, color_image = get_color_map_dic(DATA_OPTION)
 
 input_var = tf.placeholder(tf.float32, [None, IMAGE_HEIGHT, IMAGE_WIDTH, IMAGE_CHANNEL])
-pred_tensors = FCN(input_var, False)
+logits, prediction_op = FCN_UNet(input_var, False)
 
 # 3. test
 sess = tf.Session()
 sess.run(tf.global_variables_initializer())
 
-for png_path in train_png_paths:
-    image_path = png_to_jpg(png_path)
+saver = tf.train.Saver()
+saver.restore(sess, './model/FCN_48000.ckpt')
 
-    image = cv2.imread(image_path)
-    image = cv2.resize(image, (IMAGE_WIDTH, IMAGE_HEIGHT))
-            
-    mask_image = cv2.imread(png_path)
-    mask_image = cv2.resize(mask_image, (IMAGE_WIDTH, IMAGE_HEIGHT))
+cam = cv2.VideoCapture(0)
 
-    pred_data = sess.run(pred_tensors, feed_dict = {input_var : [image]})[0]
-    pred_image = Decode(pred_data, color_dic)
+while True:
+    ret, frame = cam.read()
+    if not ret:
+        break
+    
+    h, w, c = frame.shape
+    tf_image = cv2.resize(frame, (IMAGE_WIDTH, IMAGE_HEIGHT))
+    
+    inference_time = time.time()
 
+    prediction = sess.run(prediction_op, feed_dict = {input_var : [tf_image]})[0]
+
+    inference_time = int((time.time() - inference_time) * 1000)
+    print('{}ms'.format(inference_time)) # ~13ms
+
+    pred_image = Decode(prediction, color_dic)
+    pred_image = cv2.resize(pred_image, (w, h))
+
+    cv2.imshow('Image', frame)
     cv2.imshow('Prediction', pred_image)
-    cv2.waitKey(0)
+    cv2.waitKey(1)

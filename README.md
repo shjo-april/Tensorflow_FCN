@@ -1,6 +1,6 @@
 # Tensorflow_FCN (UNet)
 
-## Results (VOC2007 Test meanIU : 86%)
+## Results (VOC2007 Test meanIU : 86%, Inference time : 13ms)
 
 ### iter = 1000 (RGB image, GT image, Prediction image)
 ![result](./results/1000_1.jpg)
@@ -13,6 +13,9 @@
 ![result](./results/50000_2.jpg)
 ![result](./results/50000_3.jpg)
 ![result](./results/50000_4.jpg)
+
+## Device
+- GTX 1050 (Test)
 
 ## Requirements
 - Tensorflow 1.13.1
