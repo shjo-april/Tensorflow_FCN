@@ -31,7 +31,7 @@ def Calculate_meanIU(pred_image, gt_image, threshold = 0.5):
         union = np.sum(np.logical_or(pred_mask, gt_mask))
 
         if union == 0.0:
-            class_score = 0.0
+            class_score = 1.
         else:
             class_score = inter / union
 
