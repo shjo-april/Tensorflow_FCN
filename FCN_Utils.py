@@ -9,7 +9,7 @@ def Encode(mask_image, color_dic, classes):
     h, w, c = mask_image.shape
 
     label_data = np.zeros((h, w, classes), dtype = np.float32)
-
+    
     for y in range(h):
         for x in range(w):
             for color_name in color_names:

@@ -27,7 +27,7 @@ def FCN_UNet(input_var, is_training):
         x = tf.layers.conv2d_transpose(inputs = x, filters = shape[-1], kernel_size = [3, 3], strides = 2, padding = 'SAME', kernel_initializer = init_fn, name = 'up_conv2d_{}'.format(i))
         x = tf.layers.batch_normalization(inputs = x, training = is_training, name = 'up_bn_{}'.format(i))
         x = tf.nn.relu(x, name = 'up_relu_{}'.format(i))
-
+        
         #print(x, prior_feature_map); input()
         x = tf.concat((x, prior_feature_map), axis = -1)
         

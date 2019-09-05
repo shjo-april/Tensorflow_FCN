@@ -1,7 +1,19 @@
-# Tensorflow_FCN (UNet)
+# Fully Convolutional Networks for Semantic Segmentation
 
-## Results (VOC2007 Test meanIU : 86%, Inference time : 13ms)
+## # Summary
+1. fully connected layers -> 1x1 convolution layers
+2. end-to-end learning
 
+## # Difference from Paper
+1. with Batch Normalization
+1. Skip Architecture -> UNet
+
+## # Results 
+| Model  | meanIU | Inference time (with GTX 1050) |
+| ------------- | ------------- | ------------- |
+| (self) FCN-UNet | 86% | 13ms |
+
+## # Samples
 ### iter = 1000 (RGB image, GT image, Prediction image)
 ![result](./results/1000_1.jpg)
 ![result](./results/1000_2.jpg)
@@ -14,10 +26,7 @@
 ![result](./results/50000_3.jpg)
 ![result](./results/50000_4.jpg)
 
-## Device
-- GTX 1050 (Test)
-
-## Requirements
-- Tensorflow 1.13.1
-- OpenCV 4.0.0
-- Numpy 1.16.4
+## # Reference
+- Fully Convolutional Networks for Semantic Segmentation
+- Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift
+- U-Net: Convolutional Networks for Biomedical Image Segmentation
